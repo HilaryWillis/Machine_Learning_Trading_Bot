@@ -36,7 +36,8 @@ Open the Jupyter notebook. Restart the kernel, run the provided cells that corre
 
 7. Create a cumulative return plot that shows the actual returns vs. the strategy returns. Save a PNG image of this plot. This will serve as a baseline against which to compare the effects of tuning the trading algorithm.
 
-### CONCLUSION: Insert Strategy Plot PNG34
+### BASELINE PERFORMANCE CONCLUSION:
+![Baseline Performace Plot](https://github.com/HilaryWillis/Machine_Learning_Trading_Bot/blob/main/Starter_Code/Resources/Screenshot%20(34).png)
 
 The baseline strategy return plot shows that short window and long window returns were not very accurate between predicted outcomes and actual outcomes. There is one point in time, during 1st quarter 2016, where the model predicted fairly accurately. Overall, this model should not be used and needs to be improved. 
 
@@ -50,7 +51,8 @@ In this section, you’ll tune, or adjust, the model’s input features to find 
 
 2. Tune the trading algorithm by adjusting the SMA input features. Adjust one or both of the windows for the algorithm. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing either or both of the SMA windows?
 
-# CONCLUSION: Insert Classification Plot PNG32
+# CLASSIFICATION MODEL CONCLUSION: 
+![Classification Plot](https://github.com/HilaryWillis/Machine_Learning_Trading_Bot/blob/main/Starter_Code/Resources/Screenshot%20(32).png)
 
 The baseline cumulative return plot shows that strategy returns were accurate until the end of 2018. From there, the classification model started predicting higher returns than actual fairly consistently through 2021.
 
@@ -64,7 +66,8 @@ In this section, you’ll use the original parameters that the starter code prov
 
 3. Backtest the new model to evaluate its performance. Save a PNG image of the cumulative product of the actual returns vs. the strategy returns for this updated trading algorithm, and write your conclusions in your `README.md` file. 
 
-### CONCLUSION: INSERT PNG33
+### OVERALL CONCLUSION: 
+![Decision Tree Classifier](https://github.com/HilaryWillis/Machine_Learning_Trading_Bot/blob/main/Starter_Code/Resources/Screenshot%20(33).png)
 
 The Decision Tree Classifier model appears to perform better than the baseline model as the variance between predicted and actual seems to be smaller. However, the Decision Tree Classifier did not perform as well as the Classification model as you can see with .45 and .55 acurracy scores respectively. Additionally, the Classification model correctly predicted 96% of the buy opportunities (1.0) versus a 12% rate for the Decision Tree model. Overall, I advise using the Classification model with a date offset of 3 months. 
 
