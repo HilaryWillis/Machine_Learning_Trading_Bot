@@ -39,7 +39,7 @@ Open the Jupyter notebook. Restart the kernel, run the provided cells that corre
 ### BASELINE PERFORMANCE CONCLUSION:
 ![Baseline Performace Plot](https://github.com/HilaryWillis/Machine_Learning_Trading_Bot/blob/main/Starter_Code/Resources/Screenshot%20(34).png)
 
-The baseline strategy return plot shows that short window and long window returns were not very accurate between predicted outcomes and actual outcomes. There is one point in time, during 1st quarter 2016, where the model predicted fairly accurately. Overall, this model should not be used and needs to be improved. 
+The baseline strategy return plot shows that the original baseline model was not very accurate between predicted outcomes and actual outcomes. There is one point in time, during 4th quarter 2015, where the model predicted fairly accurately. Overall, this model should not be used and needs to be improved. 
 
 #### Tune the Baseline Trading Algorithm
 
@@ -47,11 +47,9 @@ In this section, you’ll tune, or adjust, the model’s input features to find 
 
 1. Tune the training algorithm by adjusting the size of the training dataset. To do so, slice your data into different periods. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing the training window?
 
-> **Hint** To adjust the size of the training dataset, you can use a different `DateOffset` value&mdash;for example, six months. Be aware that changing the size of the training dataset also affects the size of the testing dataset.
-
 2. Tune the trading algorithm by adjusting the SMA input features. Adjust one or both of the windows for the algorithm. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing either or both of the SMA windows?
 
-# CLASSIFICATION MODEL CONCLUSION: 
+### CLASSIFICATION MODEL CONCLUSION: 
 ![Classification Plot](https://github.com/HilaryWillis/Machine_Learning_Trading_Bot/blob/main/Starter_Code/Resources/Screenshot%20(32).png)
 
 The baseline cumulative return plot shows that strategy returns were accurate until the end of 2018. From there, the classification model started predicting higher returns than actual fairly consistently through 2021.
